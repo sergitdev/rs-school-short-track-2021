@@ -1,27 +1,31 @@
 /**
- * Implement the Stack with a given interface via array.
+ * Implement the arr with a given interface via array.
  *
  * @example
- * const stack = new Stack();
+ * const arr = new arr();
  *
- * stack.push(1); // adds the element to the stack
- * stack.peek(); // returns the peek, but doesn't delete it, returns 1
- * stack.pop(); // returns the top element from stack and deletes it, returns 1
- * stack.pop(); // undefined
+ * arr.push(1); // adds the element to the arr
+ * arr.peek(); // returns the peek, but doesn't delete it, returns 1
+ * arr.pop(); // returns the top element from arr and deletes it, returns 1
+ * arr.pop(); // undefined
  *
  */
-class Stack {
-  push(/* element */) {
-    throw new Error('Not implemented');
+class arr {
+  constructor() {
+    this.arr = [];
+  }
+
+  push(element) {
+    return this.arr.push(element);
   }
 
   pop() {
-    throw new Error('Not implemented');
+    return this.arr.pop();
   }
 
   peek() {
-    throw new Error('Not implemented');
+    return this.arr[this.arr.length - 1];
   }
 }
 
-module.exports = Stack;
+module.exports = arr;
